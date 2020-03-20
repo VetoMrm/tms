@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="card-deck">
+        <div class="card shadow-lg p-3 mb-5 rounded " id="cardDesign1">
+            <div class="card-body text-center">
+                <img src="assets\icons\open.png" class="image">
+                <a routerLink='/default/dashboard/showtables' id="family" >OPEN</a>
+               <p class="card-text " id="value"><ng2-odometer [number]="openNumber" [config]="{ }"></ng2-odometer></p>               
+            </div>
+        </div>
+        <div class="card shadow-lg p-3 mb-5 rounded" id="cardDesign2">
+            <div class="card-body text-center">
+                <img src="assets\icons\progress.png" class="image">
+                <p class="card-text" id="family">IN PROGRESS</p>
+                <p class="card-text" id="value"><ng2-odometer [number]="inProgress" [config]="{ }"></ng2-odometer></p>               
+            </div>
+        </div>
+        <div class="card shadow-lg p-3 mb-5 rounded" id="cardDesign3">
+            <div class="card-body text-center">
+                <img src="assets\icons\debug.png" class="image">
+                <p class="card-text" id="family">FIXED</p>
+                <p class="card-text" id="value"><ng2-odometer [number]="fixed" [config]="{ }"></ng2-odometer></p>               
+            </div>
+        </div>
+    </div>
+    <div class="card-deck">
+        <div class="card shadow-lg p-3 mb-5 rounded" id="cardDesign4">
+            <div class="card-body text-center">
+                <img src="assets\icons\icons8-pause-100.png" class="image">
+                <p class="card-text " id="family">HOLD</p>
+                <p class="card-text" id="value"><ng2-odometer [number]="hold" [config]="{ }"></ng2-odometer></p>               
+            </div>
+        </div>
+        <div class="card shadow-lg p-3 mb-5 rounded" id="cardDesign5">
+            <div class="card-body text-center">
+                <img src="assets\icons\closed.png" class="image">
+                <p class="card-text" id="family">CLOSED</p>
+                <p class="card-text" id="value"><ng2-odometer [number]="closed" [config]="{ }"></ng2-odometer></p>               
+            </div>
+        </div>
+        <div class="card shadow-lg p-3 mb-5 rounded" id="cardDesign6">
+            <div class="card-body text-center">
+                <img src="assets\icons\refresh.png" class="image">
+                <p class="card-text" id="family">RE-OPEN</p>
+                <p class="card-text" id="value"><ng2-odometer [number]="reOpen" [config]="{ }"></ng2-odometer></p>               
+            </div>
+        </div>
+
+    </div>
+    <router-outlet></router-outlet>
+   
+</div>
